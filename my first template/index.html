@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NS</title>
+    <!-- Icon title -->
+    <link rel="icon" href="https://mktcanban.com/_next/static/images/amailogo-f74aeb7aec02a65ac260294b3ff89a14.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <script src="https://kit.fontawesome.com/cc6c61b593.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="headtext">
+                    <li>
+                        <a href="#" id="home1" class="headtext2" onclick="switchPage(1)">
+                            <span class="fas fa-home"></span>
+                            Trang chủ
+                    </a></li>
+
+                    <li><a href="#" id="home2" class="headtext2" onclick="switchPage(2)">
+                        <span class="fas fa-plus-square"></span>
+                            Kỹ năng
+                    </a></li>
+
+                    <li><a href="#" id="home3" class="headtext2" onclick="switchPage(3)">
+                        <span class="fas fa-book"></span>
+                            Giới thiệu
+                    </a></li>
+
+                    <li><div class="contact" id="contact">
+                        <span class="fas fa-phone"></span>
+                            Liên hệ
+                    </div></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+        </div>
+    </section>
+    </div>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="container">
+            <h1>Sonartech Studio.</h1>
+            <div id="text">
+                <script src="javascript/chuyenchu.js"></script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content">
+        <div class="container">
+            <h2>Sản Phẩm</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="product1.jpg" alt="Chưa update">
+                    <h3>Tên Sản Phẩm 1</h3>
+                    <p>Mô tả ngắn về sản phẩm</p>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="Chưa update">
+                    <h3>Tên Sản Phẩm 2</h3>
+                    <p>Mô tả ngắn về sản phẩm</p>
+                </div>
+                <!-- Thêm sản phẩm khác nếu cần -->
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container" id="credit">
+            <p>&copy; 2024 SonNguyen - Sonartech Studio. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <div class="page2" id="page2">
+        <h1>Cập nhật sau...</h1>
+        </div>
+        <div class="page3" id="page3">
+        <h1>Cập nhật sau...</h1>
+        </div>
+    <div class="menu-box">
+        <div class="menu-main">
+            <div class="menu-top">
+                <div class="menu-title">
+                    <h2>Liên hệ</h2>
+                </div>
+                <div class="menu-close">
+                    <span class="tbs-icon-cancel"></span>
+                </div>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="https://www.facebook.com/pk.son.1884" target="_blink"><span class="fa-brands fa-facebook-f"></span>Facebook</a></li>
+                    <li><a href="https://github.com/NguyenSonhoa" target="_blink"><span class="fa fa-github"></span>Github</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+// Chạy phần liên hệ
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+$('.contact').click(function() {
+    $('.menu-box').fadeIn('400', function() {
+        $('.menu-box').addClass('menu-block');
+    });
+});
+$('.menu-close').click(function() {
+    $('.menu-box').fadeOut('400', function() {
+        $('.menu-box').removeClass('menu-block');
+    });
+});
+</script>
+</body>
+</html>
